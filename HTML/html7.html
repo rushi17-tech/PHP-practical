@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+    var x = prompt("Enter any number");
+    var num = parseInt(x);
+    if (num <= 1) {
+        alert("The number is not prime");
+    } else if (num === 2) {
+        alert("The number is prime");
+    } else {
+        for (let i = 2; i <= Math.sqrt(num); i++) {
+            if (num % i === 0) {
+                alert("The number is not prime");
+                break;
+            }
+        }
+        alert("The number is prime");
+    }
+    document.writeln("Process completed successfully");
+</script>
+</body>
+</html>
